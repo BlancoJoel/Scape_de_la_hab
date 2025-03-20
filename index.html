@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - Bienvenida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="mostrar">Mostrar</button>
+    <div id="miElemento" style="display: none;" class="container">
+        <h1>¡Bienvenidos al laboratorio del Dr. Vandross!</h1>
+        <p>
+            Hace años, el brillante pero excéntrico científico <strong>Dr. Octavius Vandross</strong> desapareció mientras trabajaba en un experimento revolucionario. Su laboratorio quedó sellado, lleno de acertijos y trampas diseñadas para proteger su gran descubrimiento.
+        </p>
+        <p>
+            Hoy, has recibido un misterioso mensaje: <em>"Si encuentras mi laboratorio y superas los desafíos, el mayor secreto de la humanidad será tuyo. Pero cuidado: solo los más astutos saldrán con vida."</em>
+        </p>
+        <p>
+            Prepárate para enfrentarte a retos que desafiarán tu ingenio y tu valentía. ¿Podrás escapar del laboratorio y descubrir el gran secreto?  
+        </p>
+        <a href="reto1.php" class="start-button">¡Comenzar la aventura!</a>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+    $("#mostrar").click(function(){
+      $("#miElemento").slideDown(1000); 
+      $(this).hide();
+    });
+  });
+    </script>
+    
+</body>
+</html>
